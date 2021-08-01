@@ -155,11 +155,11 @@
 }
 
 .nav-list {
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
 
@@ -193,24 +193,24 @@
 }
 
 .header-list {
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
     list-style: none;
     margin-left: auto;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }
 
 .header-list__item:not(:last-child) {
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-right: 50px;
   }
 }

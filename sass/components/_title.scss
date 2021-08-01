@@ -2,11 +2,9 @@
   text-align: center;
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: var(--main-margin);
 
-  @media (max-width: 1119px) {
-    margin-bottom: var(--main-margin);
-  }
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }

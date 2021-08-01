@@ -1,36 +1,29 @@
-.preference-section {
-  @media (max-width: 1119px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .preference-list {
   list-style: none;
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
   }
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
 }
 
 .preference-list__item {
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: calc(100% / 2 - var(--main-margin));
     margin: 15px;
   }
 
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - var(--main-margin));
   }
 }
 
 .preference-list__item:not(:last-child) {
-  @media (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
 }

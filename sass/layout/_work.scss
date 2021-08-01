@@ -1,8 +1,8 @@
 .work-section {
-  @media (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
-  @media (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 0;
   }
 }
