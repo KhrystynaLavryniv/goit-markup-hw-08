@@ -1,0 +1,134 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+  @media (min-width: 768px) {
+  }
+}
+.footer__container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  @media (max-width: 1199px) {
+    justify-content: space-between;
+  }
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.footer__address {
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    margin-bottom: 60px;
+    margin-left: 76px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
+}
+
+.footer__address-list {
+  margin-top: 20px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  color: var(--secondary-color);
+}
+
+.footer__network {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @media (max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: 768px) {
+    margin-right: 89px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 70px;
+    align-items: flex-start;
+  }
+}
+.footer__title {
+  color: var(--secondary-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+
+  @media (max-width: 1199px) {
+    text-align: center;
+  }
+}
+
+.footer__form-container {
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
+  @media (min-width: 1200px) {
+    margin: 0 0 0 auto;
+  }
+}
+
+.address-list {
+  list-style: none;
+
+  @media (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.address-list__item .contact-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+  text-decoration: none;
+  padding: 0;
+  transition: color var(--main-duration) var(--main-timing-function);
+}
+.address-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-list__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: var(--secondary-color);
+  text-decoration: none;
+  transition: color var(--main-duration) var(--main-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--color-accent);
+  }
+}
+
+.address-list__item .contact-link:focus,
+.address-list__item .contact-link:hover {
+  color: var(--color-accent);
+}

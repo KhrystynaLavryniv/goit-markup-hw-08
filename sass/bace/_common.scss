@@ -1,0 +1,48 @@
+body {
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: var(--main-padding);
+    padding-bottom: var(--main-padding);
+  }
+}
+
+.btn {
+  display: block;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
