@@ -35,7 +35,7 @@
 }
 
 .portfolio__button-item {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin: 8px;
   }
 }
@@ -74,7 +74,7 @@
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     margin-bottom: var(--main-margin);
   }
@@ -124,11 +124,12 @@
 .product__content {
   align-items: center;
   padding: 20px 24px;
+  padding-right: 0;
 }
 
 .product__title {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 2;
   color: var(--portfolio-main-color);
   letter-spacing: 0.06em;

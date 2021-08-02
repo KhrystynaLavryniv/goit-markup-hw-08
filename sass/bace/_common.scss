@@ -29,10 +29,8 @@ ul {
 }
 
 .section {
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: var(--main-padding);
