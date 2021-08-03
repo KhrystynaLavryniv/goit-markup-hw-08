@@ -227,6 +227,7 @@ ul {
 
 .mobile-menu__container {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: 48px 40px;
@@ -237,6 +238,12 @@ ul {
   top: 10px;
   right: 15px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-menu__close-btn {
+    margin-left: auto;
+  }
 }
 
 .burger-btn__icon:focus,
@@ -588,7 +595,7 @@ ul {
   text-transform: uppercase;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .preference-list__title {
     text-align: initial;
   }
@@ -697,7 +704,24 @@ ul {
 
 .card-img {
   width: 100%;
-  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .card-img {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-img {
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-img {
+    max-width: 270pxpx;
+  }
 }
 
 .card-component {
@@ -839,7 +863,7 @@ ul {
 
 @media screen and (max-width: 1199px) {
   .footer__container {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 
@@ -858,7 +882,6 @@ ul {
 @media screen and (min-width: 768px) {
   .footer__address {
     margin-bottom: 60px;
-    margin-left: 76px;
   }
 }
 
@@ -893,12 +916,6 @@ ul {
   .footer__network {
     margin-top: 60px;
     margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .footer__network {
-    margin-right: 89px;
   }
 }
 
@@ -1051,7 +1068,6 @@ ul {
   border: none;
   border-radius: 4px;
   padding: 0;
-  margin-left: 12px;
   cursor: pointer;
   transition: background-color var(--main-duration) var(--main-timing-function), box-shadow var(--main-duration) var(--main-timing-function);
 }
@@ -1252,6 +1268,7 @@ ul {
 @media screen and (max-width: 479px) {
   .modal {
     max-width: 450px;
+    width: 96%;
     max-height: 609px;
     padding: 20px;
   }
