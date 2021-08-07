@@ -86,14 +86,11 @@
   color: var(--text-color);
   margin-top: 10px;
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
-  @media (max-width: 479px) {
-  }
-  @media screen and (min-width: 480px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   @media (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.17;

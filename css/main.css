@@ -1403,14 +1403,10 @@ ul {
   color: var(--text-color);
   margin-top: 10px;
   margin-bottom: 30px;
-}
-
-@media screen and (min-width: 480px) {
-  .modal-form__checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1199px) {
